@@ -1,0 +1,237 @@
+.container {
+      width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+ /*headeer*/
+    
+    
+.header .container {
+      display: flex;
+      align-items: center;
+  }
+    .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+  .header-webStudio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+  }
+
+  .header-web {
+    color: #2196f3;
+  }
+
+  .header-studio {
+    color: #000000;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header-page {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;    
+  }
+
+  .header-adress {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: auto;
+    font-style: normal;
+  }
+
+  .header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }
+/*hero*/
+.hero {
+  padding-top: 94px;
+   padding-bottom: 94px;
+   }
+
+  .hero-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #212121;
+   background-color: #ffffff;
+   }
+
+.hero-item:hover {
+  background-color: #ffffff;
+    box-shadow:
+    1px 5px 6px rgba(217, 213, 213, 0.862),
+     1px 5px 6px rgba(212, 208, 208, 0.862),
+    1px 5px 6px rgba(178, 177, 177, 0.862);
+}
+
+.hero-more {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+   font-weight: 400;
+  font-size: 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  }
+
+  .hero-more:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+    animation: rubberBand 0.8s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 96px;
+}
+
+
+.hero-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+    margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+.hero-text {
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px
+  font-family "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-buttons button {
+  background-color: #f5f4fa;
+}
+
+/*footer*/
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+ 
+ .footer .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+   }
+
+  .footer-title .studio {
+  color: white;
+}
+
+.footer-title .web {
+  color: #2196F3;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-page {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255,255,255,0.6);
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  }
+
+  .footer-page:hover {
+  color:#2196F3;
+}
+
+
+

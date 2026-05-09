@@ -1,0 +1,395 @@
+.container {
+      width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+ /*header*/
+    
+    
+.header .container {
+      display: flex;
+      align-items: center;
+  }
+    .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+  .header-webStudio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+  }
+
+  .header-web {
+    color: #2196f3;
+  }
+
+  .header-studio {
+    color: #000000;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header-page {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;    
+  }
+
+  .header-adress {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: auto;
+    font-style: normal;
+  }
+
+  .header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    }
+  /*about*/
+
+     .about .container {
+      display: flex;
+      align-items: center;
+  }
+
+  .about {
+  text-align: center;
+  background-image:
+    url("../image/about.png");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.about .container {
+    display: flex;
+  flex-direction: column;
+}
+
+  .about-title {
+  color: white;
+  width: 696px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+}
+
+.about-more {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-top: 30px;
+  width: 216px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: #ffffff;
+}
+  /*rules*/
+
+    .rules {
+  padding-top: 94px;
+}
+
+  .rules-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+  .rules-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+
+.rules-item:nth-child(1)::before {
+  background-image: url("../image/antenna.png");
+}
+
+.rules-item:nth-child(2)::before {
+  background-image: url("../image/clock.png");
+}
+
+.rules-item:nth-child(3)::before {
+  background-image: url("../image/diagram.png");
+}
+
+.rules-item:nth-child(4)::before {
+  background-image: url("../image/astronaut.png");
+}
+
+
+.rules-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.rules-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*work*/
+
+.work {
+   padding-top: 94px;
+   padding-bottom: 94px;
+  }
+ .work-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #212121;
+}
+.work-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-bottom: 0;
+  gap: 30px;
+}
+.work-item {
+  position: relative;
+}
+.work-item::after {
+  content: "ДЕСКТОПНІ ДОДАТКИ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+.work-item:nth-child(2)::after {
+  content: "МОБІЛЬНІ ДОДАТКИ";
+}
+.work-item:nth-child(3)::after {
+  content: "ДИЗАЙНЕРСЬКІ РІШЕННЯ";
+}
+.work-item:hover {
+  animation: heartBeat 1s;
+}
+.work-photo {
+  display: block;
+}
+
+/*team*/
+
+.team {
+  background-color: #F5F4FA;
+  padding-top: 94px;
+   padding-bottom: 94px;
+   }
+
+  .team-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+  .team-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.team-item {
+  width: 270px;
+  background: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.team-text {
+  margin-bottom: 16px;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+}
+
+/*customers*/
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+  .customers-title {
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+  }
+
+  .customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .customers-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    }
+  /*footer*/
+
+  .footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+ 
+ .footer .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+   }
+
+  .footer-title .studio {
+  color: white;
+}
+
+.footer-title .web {
+  color: #2196F3;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-page {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255,255,255,0.6);
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  }
+
+  .footer-page:hover {
+  color:#2196F3;
+}
+
