@@ -14,10 +14,11 @@ body {
     
     
 .header .container {
-      display: flex;
-      align-items: center;
-  }
-    .header {
+  display: flex;
+  align-items: center;
+}
+
+  .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -53,6 +54,31 @@ body {
     color: #212121;    
   }
 
+    .header-page:hover {
+    color: #2196f3;
+  }
+
+    .header-contacts:hover,
+  .header-contacts:focus {
+  color: #2196f3;
+}
+
+  .header-contacts:hover .header-icon,
+  .header-contacts:focus .header-icon {
+  fill: #2196f3;
+}
+   .icon-email {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+  }
+
+   .icon-phone{
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+  }
+
   .header-adress {
     display: flex;
     gap: 30px;
@@ -71,6 +97,11 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
     }
+
+     .header-contacts:hover {
+      color: #2196F3;
+    }
+
 /*hero*/
 .hero {
   padding-top: 94px;
@@ -233,5 +264,46 @@ body {
   color:#2196F3;
 }
 
+.footer-join {
+  font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 20px;
+}
+
+.footer-iconlist {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #43444D;
+}
+
+.footer-iconitem {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #2196f3;
+}
 
 
