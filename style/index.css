@@ -37,24 +37,51 @@ body {
   }
 
   .header-list {
-    display: flex;
-    gap: 50px;
+    display: flex ;
+   gap: 50px;
     margin-left: 93px;
     padding: 0;
     list-style: none;
   }
 
   .header-page {
+      position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #212121;    
+    color: #212121;  
+    transition: color 250ms;  
   }
 
    .header-page:hover {
     color: #2196f3;
   }
+
+  .header-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.header-page:hover::after {
+  animation: line-hover 250ms forwards;
+}
+
+@keyframes line-hover {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
 
   .header-contacts:hover,
   .header-contacts:focus {
@@ -732,3 +759,4 @@ margin-bottom: 20px;
   background: transparent;
   cursor: pointer;
 }
+
