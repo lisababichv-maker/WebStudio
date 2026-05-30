@@ -1,0 +1,130 @@
+.hero {
+  padding-top: 94px;
+   padding-bottom: 94px;
+
+&__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+
+&__textplay {
+  font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+  position: absolute;
+   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #2196F3;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__item:hover &__textplay {
+  transform: translateY(0);
+}
+&__item {
+  cursor: pointer;
+}
+
+  &__item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #212121;
+   background-color: #ffffff;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+&__item:hover {
+  background-color: #ffffff;
+    box-shadow:
+    1px 5px 6px rgba(217, 213, 213, 0.862),
+     1px 5px 6px rgba(212, 208, 208, 0.862),
+    1px 5px 6px rgba(178, 177, 177, 0.862);
+}
+
+&__more {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+   font-weight: 400;
+  font-size: 16px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__more:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+    animation: rubberBand 0.8s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+&__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 96px;
+}
+
+
+&__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+    margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+
+&__text {
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px
+  font-family "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+&__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+&__buttons button {
+  background-color: #f5f4fa;
+}
+}

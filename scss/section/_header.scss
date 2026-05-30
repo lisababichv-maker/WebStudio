@@ -1,13 +1,13 @@
-.container {
-      display: flex;
-      align-items: center;
- }
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-}
 
-  &__webStudio {
+.container {
+      display: flex;
+      align-items: center;
+    }
+
+ &__webStudio {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -22,7 +22,7 @@
     color: #000000;
   }
 
-  .header-list {
+  &__list {
     display: flex ;
    gap: 50px;
     margin-left: 93px;
@@ -30,7 +30,7 @@
     list-style: none;
   }
 
-  .header-page {
+  &__page {
       position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -41,11 +41,11 @@
 
   }
 
-   .header-page:hover {
+   &__page:hover {
     color: #2196f3;
   }
 
-  .header-page::after {
+  &__page::after {
   content: "";
   position: absolute;
   left: 0;
@@ -56,7 +56,7 @@
   background-color: #2196f3;
 }
 
-.header-page:hover::after {
+&__page:hover::after {
   animation: line-hover 250ms forwards;
 }
 
@@ -69,17 +69,17 @@
     width: 100%;
   }
 }
-.header-contacts {
+&__contacts {
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-  .header-contacts:hover,
-  .header-contacts:focus {
+  &__contacts:hover,
+  &__contacts:focus {
   color: #2196f3;
 }
 
-  .header-contacts:hover .header-icon,
-  .header-contacts:focus .header-icon {
+  &__contacts:hover &__icon,
+  &__contacts:focus &__icon {
   fill: #2196f3;
 }
    .icon-email {
@@ -94,7 +94,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #757575;
   }
 
-  .header-adress {
+  &__adress {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -102,7 +102,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
   }
 
-  .header-contacts {
+  &__contacts {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -114,7 +114,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .header-contacts:hover {
+    &__contacts:hover {
       color: #2196F3;
     }
 
@@ -122,7 +122,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
 }
 
-.header-page {
+&__page {
   position: relative;
 }
 
@@ -135,4 +135,5 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+}
 }

@@ -1,1 +1,49 @@
-/*# sourceMappingURL=rules.css.map */
+.rules {
+  padding-top: 94px;
+}
+.rules__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+.rules__item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+.rules__item:nth-child(1)::before {
+  background-image: url("../image/antenna.png");
+}
+.rules__item:nth-child(2)::before {
+  background-image: url("../image/clock.png");
+}
+.rules__item:nth-child(3)::before {
+  background-image: url("../image/diagram.png");
+}
+.rules__item:nth-child(4)::before {
+  background-image: url("../image/astronaut.png");
+}
+.rules__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.rules__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}/*# sourceMappingURL=rules.css.map */

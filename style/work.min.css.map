@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"work.min.css"}
+{"version":3,"sources":["work.min.css","..\\scss\\section\\work.scss"],"names":[],"mappings":"AAAA,MCAA,gBACG,CAAA,mBACA,CAAA,aAEF,+BACC,CAAA,eACA,CAAA,cACA,CAAA,oBACA,CAAA,iBACA,CAAA,kBACA,CAAA,aACA,CAAA,YAEF,YACE,CAAA,kBACA,CAAA,sBACA,CAAA,eACA,CAAA,eACA,CAAA,QACA,CAAA,YAEF,iBACE,CAAA,mBAEF,2BACE,CAAA,iBACA,CAAA,QACA,CAAA,MACA,CAAA,UACA,CAAA,cACA,CAAA,4BACA,CAAA,UACA,CAAA,iBACA,CAAA,eACA,CAAA,cACA,CAAA,gCAEF,0BACE,CAAA,gCAEF,8BACE,CAAA,kBAEF,sBACE,CAAA,aAEF,aACE","file":"work.min.css"}

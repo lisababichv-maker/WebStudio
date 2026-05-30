@@ -1,0 +1,50 @@
+.work {
+   padding-top: 94px;
+   padding-bottom: 94px;
+
+ &__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #212121;
+}
+&__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-bottom: 0;
+  gap: 30px;
+}
+&__item {
+  position: relative;
+}
+&__item::after {
+  content: "ДЕСКТОПНІ ДОДАТКИ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+&__item:nth-child(2)::after {
+  content: "МОБІЛЬНІ ДОДАТКИ";
+}
+&__item:nth-child(3)::after {
+  content: "ДИЗАЙНЕРСЬКІ РІШЕННЯ";
+}
+&__item:hover {
+  animation: heartBeat 1s;
+}
+&__photo {
+  display: block;
+}
+}
