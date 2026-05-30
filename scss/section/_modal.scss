@@ -1,7 +1,15 @@
+.modal {
+  width: 500px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+
 &__cross {
   width: 11px;
   height: 11px;
   fill: #000;
+  }
 
 &__title {
   font-weight: 700;
@@ -125,13 +133,7 @@
   display: none;
 }
 
-.modal {
-  width: 500px;
-  padding: 40px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
+
 
 &__close {
   position: absolute;
