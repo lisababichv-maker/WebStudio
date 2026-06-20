@@ -66,7 +66,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           <h1 class="about__title">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <button class="about__more" type="button" data-modal__open>
+          <button class="about__more" type="button" data-modal-open>
               Замовити послугу
           </button>
       </div>
@@ -444,59 +444,70 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </footer>
 
   <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal__close" data-modal__close type="button">
-          <svg class="modal__cross">
-            <use href="./image/symbol-defs.svg#icon/vector"></use>
-          </svg>
-        </button>
-        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="modal__form">
-          <label class="modal__field">
-            Ім'я
-            <input
-              class="modal__input"
-              type="text"
-              required
-              minlength="2"
-              maxlength="15"
-            />
-            <svg class="modal__icon">
-              <use href="./image/symbol-defs.svg#icon/person"></use>
-            </svg>
-          </label>
-          <label class="modal__field">
-            Телефон
-            <input class="modal__input" type="tel" />
-            <svg class="modal__icon">
-              <use href="./image/symbol-defs.svg#icon/call"></use>
-            </svg>
-          </label>
-          <label class="modal__field">
-            Пошта
-            <input class="modal__input" type="email" required minlength="10" />
-            <svg class="modal__icon">
-              <use href="./image/symbol-defs.svg#icon/black/letter"></use>
-            </svg>
-          </label>
-          <label class="modal__field">
-            Коментар
-            <textarea
-              class="modal__textarea"
-              placeholder="Введіть текст"
-            ></textarea>
-          </label>
-          <div class="modal__agree">
-            <input class="modal__checkbox" type="checkbox" required />
-            <p class="modal__text">
-              Погоджуюся з розсилкою та приймаю
-              <a class="modal__link" href="">Умови договору</a>
-            </p>
-          </div>
-          <button class="modal__submit" type="submit">Відправити</button>
-        </form>
-    </div>
+  <div class="modal">
+    <button class="modal__close" data-modal-close type="button">
+      <svg class="modal__cross">
+        <use href="./image/symbol-defs.svg#icon-letter"></use>
+      </svg>
+    </button>
 
-    <script src="../js/modal.js"></script>
+    <h2 class="modal__title">
+      Залиште свої дані, ми вам передзвонимо
+    </h2>
+
+    <form class="modal__form">
+      <label class="modal__field">
+        Ім'я
+        <input
+          class="modal__input"
+          type="text"
+          required
+          minlength="2"
+          maxlength="15"
+        />
+        <svg class="modal__icon">
+          <use href="./image/symbol-defs.svg#icon-person"></use>
+        </svg>
+      </label>
+
+      <label class="modal__field">
+        Телефон
+        <input class="modal__input" type="tel" />
+        <svg class="modal__icon">
+          <use href="./image/symbol-defs.svg#icon-call"></use>
+        </svg>
+      </label>
+
+      <label class="modal__field">
+        Пошта
+        <input class="modal__input" type="email" required />
+        <svg class="modal__icon">
+          <use href="./image/symbol-defs.svg#icon-vector"></use>
+        </svg>
+      </label>
+
+      <label class="modal__field">
+        Коментар
+        <textarea
+          class="modal__textarea"
+          placeholder="Введіть текст"
+        ></textarea>
+      </label>
+
+      <div class="modal__agree">
+        <input class="modal__checkbox" type="checkbox" required />
+        <p class="modal__text">
+          Погоджуюся з розсилкою та приймаю
+          <a class="modal__link" href="">Умови договору</a>
+        </p>
+      </div>
+
+      <button class="modal__submit" type="submit">
+        Відправити
+      </button>
+    </form>
+  </div>
+</div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

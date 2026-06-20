@@ -1,146 +1,144 @@
 .modal {
   width: 500px;
   padding: 40px;
-  background: #fff;
+  background: $basic-color;
   border-radius: 4px;
   position: relative;
 
-&__cross {
-  width: 11px;
-  height: 11px;
-  fill: #000;
+  &__cross {
+    width: 11px;
+    height: 11px;
+    fill: $error-color;
   }
 
-&__title {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 12px;
-}
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $accent-color;
+    margin-bottom: 12px;
+  }
 
-&__field {
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  position: relative;
-}
+  &__field {
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $focus-color;
+    position: relative;
+    display: block;
+  }
 
-/* INPUT */
-&__input {
-  width: 100%;
-  height: 40px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 4px;
-  outline: 1px solid #212121;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid $accent-color;
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&__input:hover,
-&__input:focus {
-  outline: 1px solid #2196f3;
-}
+    &:hover,
+    &:focus {
+      outline: 1px solid $main-color;
+    }
 
-&__input:hover + &__icon,
-&__input:focus + &__icon {
-  fill: #2196f3;
-}
+    &:hover + .modal__icon,
+    &:focus + .modal__icon {
+      fill: $main-color;
+    }
+  }
 
+  &__icon {
+    position: absolute;
+    left: 12px;
+    top: 30px;
+    width: 14px;
+    height: 14px;
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-&__icon {
-  position: absolute;
-  left: 12px;
-  top: 29px;
-  width: 14px;
-  height: 14px;
-  fill: #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    outline: 1px solid $accent-color;
+    resize: none;
+    font-size: 12px;
 
+    &::placeholder {
+      color: $border-color;
+    }
+  }
 
-&__textarea {
-  width: 100%;
-  height: 120px;
-  margin-top: 4px;
-  margin-bottom: 20px;
-  padding: 12px 16px;
-  border: none;
-  border-radius: 4px;
-  outline: 1px solid rgba(33, 33, 33, 0.2);
-  resize: none;
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
-}
+  &__agree {
+   @extend %flex;
+  }
 
+  &__checkbox {
+    width: 16px;
+    height: 15px;
+  }
 
-&__agree {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__text {
+    font-size: 12px;
+    line-height: 1.71;
+    color: $focus-color;
+    margin-left: 9px;
+  }
 
-&__checkbox {
-  width: 16px;
-  height: 15px;
-}
+  &__link {
+    color: $main-color;
+    text-decoration: underline;
+    margin-left: 4px;
+  }
 
-&__text {
-  font-size: 12px;
-  line-height: 1.71;
-  color: #757575;
-  margin-left: 9px;
-}
+  &__submit {
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    background-color: $main-color;
+    color: $basic-color;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 4px $accent-color;
+    cursor: pointer;
+  }
 
-&__link {
-  color: #2196f3;
-  text-decoration: underline;
-  margin-left: 4px;
-}
-
-
-&__submit {
-  width: 200px;
-  height: 50px;
-  margin: 30px auto 0;
-  display: block;
-  border: none;
-  border-radius: 4px;
-  background-color: #2196f3;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    background: $basic-color;
+    @extend %flex;
+    cursor: pointer;
+  }
 }
 
 .backdrop {
   position: fixed;
   inset: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(0, 0, 0, 0.5);
-
-  transition: 0.2s;
+  @extend %flex;
+  background: $accent-color;
+  transition: opacity 250ms ease,
+              visibility 250ms ease;
 }
 
 .backdrop.is-hidden {
-  display: none;
-}
-
-
-
-&__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

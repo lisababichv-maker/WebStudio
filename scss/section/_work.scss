@@ -1,15 +1,16 @@
+
+
 .work {
-   padding-top: 94px;
-   padding-bottom: 94px;
+  @extend %padding;
 
  &__title {
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
-  color: #212121;
+  color: $accent-color;
 }
 &__list {
   display: flex;
@@ -29,8 +30,8 @@
   left: 0;
   width: 100%;
   padding: 27px 0;
-  background: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
+  background: $dark-color;
+  color: $basic-color;
   text-align: center;
   font-weight: 700;
   font-size: 14px;

@@ -1,6 +1,10 @@
 @import "base/reset";
 @import "base/container";
 @import "base/common";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "utils/variables";
+
 @import "section/header";
 @import "section/about";
 @import "section/rules";
@@ -8,4 +12,5 @@
 @import "section/team";
 @import "section/customers";
 @import "section/hero";
+@import "section/modal";
 @import "section/footer";

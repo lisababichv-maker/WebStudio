@@ -1,16 +1,15 @@
 
 .team {
-  background-color: #F5F4FA;
-  padding-top: 94px;
-   padding-bottom: 94px;
+  background-color: $background-color;
+  @extend %padding;
 
   &__title {
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: $accent-color;
 }
 
   &__list {
@@ -24,14 +23,12 @@
 
 &__item {
   width: 270px;
-  background: #ffffff;
+  background: $basic-color;
   text-align: center;
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
   box-shadow:
-    0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    $shadow;
 }
 
 &__photo {
@@ -43,22 +40,22 @@
 &__subtitle {
   margin-top: 30px;
   margin-bottom: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: $accent-color;
 }
 
 &__text {
   margin-bottom: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: $main-font;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: $focus-color;
 }
 
 &__iconlist {
@@ -71,20 +68,18 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %flex;
+  transition: $transition;
 }
 
 &__link:hover,
 &__link:focus {
-  background-color: #2196f3;
+  background-color : $main-color;
 }
 
 &__link:hover &__icon,
 &__link:focus:focus &__icon {
-  fill: #ffffff;
+  fill: $basic-color;
 }
 
 &__iconitem {
@@ -95,6 +90,6 @@
 &__icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: $border-color;
 }
 }

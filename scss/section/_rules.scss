@@ -15,7 +15,7 @@
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: $background-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 70px;
@@ -39,20 +39,20 @@
 
 
 &__title {
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: $accent-color;
 }
 
 &__text {
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $focus-color;
 }
 }

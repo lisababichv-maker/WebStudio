@@ -1,15 +1,14 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %padding;
 
   &__title {
     margin-bottom: 50px;
-    font-family: "Roboto", sans-serif;
+    font-family: $main-font;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $accent-color;
   }
 
   &__list {
@@ -21,13 +20,11 @@
   &__link {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid $border-color;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %flex;
+  color: $border-color;
+  transition: $transition;
 }
 
 &__icon {
@@ -38,8 +35,8 @@
 
 &__link:hover,
 &__link:focus {
-  color: #2196f3;
-  border-color: #2196f3;
+  color: $main-color;
+  border-color: $main-color;
 }
 
 &__item {

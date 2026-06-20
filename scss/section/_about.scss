@@ -2,8 +2,7 @@
   text-align: center;
   background-image:
     url("../image/about.png");
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @extend %padding-abt;
   position: relative;
 
 .container {
@@ -13,9 +12,9 @@
     }
 
   &__title {
-  color: white;
+  color: $basic-color;
   width: 696px;
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font;
   font-weight: 900;
   font-size: 44px;
   line-height: 136%;
@@ -25,7 +24,7 @@
 }
 
 &__more {
-  font-family: "Roboto", sans-serif;
+  font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -37,7 +36,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #2196F3;
-  color: #ffffff;
+  background-color: $main-color;
+  color: $basic-color;
 }
 }

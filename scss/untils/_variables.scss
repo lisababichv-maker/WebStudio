@@ -1,0 +1,22 @@
+//colors
+$main-color: #2196F3;
+$basic-color: #ffffff;
+$accent-color: #212121;
+$border-color: #afb1b8;
+$focus-color: #757575;
+$dark-color: #2F303A;
+$background-color: #f5f5f5;
+$error-color: #000000;
+
+//fonts
+$main-font: "Roboto", sans-serif;
+//animation
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//shadow
+$shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+ 0px 1px 1px rgba(0, 0, 0, 0.14), 
+ 0px 2px 1px rgba(0, 0, 0, 0.2);
+ $box-shadow: 1px 5px 6px rgba(217, 213, 213, 0.862),
+    1px 5px 6px rgba(212, 208, 208, 0.862),
+    1px 5px 6px rgba(178, 177, 177, 0.862);

@@ -1,7 +1,6 @@
  .footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: $dark-color;
+  @extend %padding-fo;
 
  
 .container {
@@ -16,26 +15,26 @@
 }
 
 &__title {
-  font-family: "Raleway", sans-serif;
+  font-family: $logo-font;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
    }
 
   &__title .studio {
-  color: white;
+  color: $basic-color;
 }
 
 &__title .web {
-  color: #2196F3;
+  color: $main-color;
 }
 
 &__text {
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
-    font-family: "Roboto", sans-serif;
+  color: $basic-color;
+    font-family: $main-font;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
@@ -50,25 +49,25 @@
 &__page {
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255,255,255,0.6);
-    font-family: "Roboto", sans-serif;
+  color: $border-color;
+    font-family: $main-font;
   font-weight: 400;
   letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
   }
 
   &__page:hover {
-  color:#2196F3;
+  color:$main-color;
 }
 
 &__join {
-  font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #fff;
-margin-bottom: 20px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $basic-color;
+  margin-bottom: 20px;
 }
 
 &__iconlist {
@@ -85,7 +84,7 @@ margin-bottom: 20px;
   align-items: center;
   justify-content: center;
   background-color: #43444D;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition;
 }
 
 &__iconitem {
@@ -96,12 +95,12 @@ margin-bottom: 20px;
 &__icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $basic-color;
 }
 
 &__link:hover,
 &__link:focus {
-  background-color: #2196f3;
+  background-color: $main-color;
 }
 
 &__container {
@@ -124,7 +123,7 @@ margin-bottom: 20px;
 }
 
 &__join {
-  color: #ffffff;
+  color: $basic-color;
   font-weight: 700;
 }
 
@@ -138,32 +137,30 @@ margin-bottom: 20px;
   min-width: 0;
   height: 50px;
   padding: 0 16px;
-  border: 1px solid #757575;
+  border: 1px solid $focus-color;
   border-radius: 4px;
-  background-color: #2F303A;
-  color: #fff;
+  background-color: $dark-color;
+  color: $basic-color;
 }
 &__input::placeholder {
-  color: #757575;
+  color: $focus-color;
 }
 &__button {
   height: 50px;
   padding: 0 20px;
-  background-color: #2196f3;
+  background-color: $main-color;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: $basic-color;
+  @extend %flex;
   gap: 10px;
   cursor: pointer;
 }
 &__telegram {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $basic-color;
 }
   }
